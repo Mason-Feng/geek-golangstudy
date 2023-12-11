@@ -43,4 +43,9 @@ func main() {
 	str6 := DeleteAny[string](str5, 2)
 	fmt.Printf("str6:%v str6的长度为：%d ,容量为 %d \n", str6, len(str6), cap(str6))
 
+	str7 := []string{"f", "e", "n", "g", "q", "i", "a", "o", "w", "e", "i"}
+	fmt.Printf("str7:%v str7的长度为：%d ,容量为 %d \n", str7, len(str7), cap(str7))
+	str8 := DeleteAny[string](str7, 2)
+	fmt.Printf("str8:%v str8的长度为：%d ,容量为 %d \n", str8, len(str8), cap(str8))
+
 }
