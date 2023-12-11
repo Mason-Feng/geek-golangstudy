@@ -16,7 +16,7 @@ func DeleteAt[T any](src []T, index int) ([]T, error) {
 	for i := index; i+1 < length; i++ {
 		src[i] = src[i+1]
 	}
-	return src[:length+1], nil
+	return src[:length-1], nil
 }
 
 func Shrink[T any](src []T) []T {
